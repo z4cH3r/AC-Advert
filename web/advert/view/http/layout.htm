@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>{{@T.head_title}}</title>
+        <link rel="icon" href="/ads/img/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Scada:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
@@ -11,8 +12,7 @@
     </head>
     <body>
       <header class="columns <check if="{{@@V.wider}}"><true>col-10</true><false>col-6</false></check> col-md-11 col-mx-auto">
-        <a class="logo" href="{{@BASE}}/">{{@T.logo_title}}</a>
-        <a class="primary col-ml-auto text-bold" href="//hlmod.ru/resources/ac-advert-reklamnye-soobschenija.1237/"><span style="color:#ffd9d9;">HL</span><span style="color: #cceaff;">MOD</span></a>
+        <a class="logo" href="/ads/"><img border="0" alt="AC-Advert" src="/ads/img/logo-big.png" width="400px" height="100%"></a>
       </header>
       <main class="columns <check if="{{@@V.wider}}"><true>col-10</true><false>col-6</false></check> col-md-11 col-mx-auto">
         <nav class="col-12 columns col-gapless">
@@ -37,7 +37,9 @@
           </check>
         </section>
         <footer class="my-2 p-centered">
-          <a href="https://github.com/diller110/AC-Advert">AC:Advert v1.1a</a>
+          <a href="//github.com/diller110/AC-Advert" style="font-size: 10px; width: 15%;">AC:Advert v1.1a</a>
+          <b style="font-size: 10px; width: 15%;">-</b>
+          <a href="//hlmod.ru/resources/ac-advert-reklamnye-soobschenija.1237/" style="font-size: 10px; width: 15%;">HLMOD</a>
         </footer>
       </main>
       <script src="{{@BASE}}/js/scripts.js"></script>

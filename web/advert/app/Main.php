@@ -11,6 +11,7 @@ class Main {
 	function login($f3, $params) {
 		Main::layout();
 		$f3->set('V.page', 'login');
+		$f3->set('V.wider', 1);
 		$f3->set('content', 'cell/login.htm');
 		if($f3->exists('POST.pass')) {
 			if($f3->get('POST.pass') == '0') {
@@ -25,6 +26,7 @@ class Main {
 	function index($f3, $params) {
 		Main::layout();
 		$f3->set('V.page', 'servers');
+		$f3->set('V.wider', 1);
 		$f3->set('V.button', [
 			'text'=>$f3->get('T.add_server'),
 			'href'=>'#btn_add'
@@ -39,6 +41,7 @@ class Main {
 	function words($f3, $params) {
 		Main::layout();
 		$f3->set('V.page', 'words');
+		$f3->set('V.wider', 1);
 		$f3->set('V.button', [
 			'text'=>$f3->get('T.add_magic_word'),
 			'href'=>'#btn_add'
@@ -86,7 +89,7 @@ class Main {
 				}
 			}
 			$f3->set('ads', $ads);
-		} else $f3->set('ads', array());
+		}  else $f3->set('ads', array());
 		Main::render();
 	}
 

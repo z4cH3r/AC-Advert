@@ -18,7 +18,7 @@
       <repeat group="{{@@ads}}" value="{{@adv}}">
         <tr <check if="{{@adv.show==0}}">style="background: #dfdfdf;"</check>>
           <td><a><i class="material-icons secondary-text"><check if="{{@adv.show}}"><true>visibility</true><false>visibility_off</false></check></i></a></td>
-          <td class="text-left" style="font-size: 10px; width: 15%;">
+          <td class="text-left">
             <repeat group="{{@@adv.servers}}" value="{{@server}}">{{@server.title}} </repeat>
           </td>
           <td>{{ @adv.msg_type }}</td>
